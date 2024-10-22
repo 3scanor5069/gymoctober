@@ -1,0 +1,51 @@
+/* Filter container */
+.filter-bar {
+  width: 100%;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #e0e0e0;
+  position: sticky;
+  top: -2px;
+  height: auto;
+}
+
+.filter-group {
+  margin-bottom: 20px; /* Spacing between filters */
+}
+
+.filter-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%; /* Full width inputs */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-button {
+  background-color: #007bff; /* Apply a bold blue color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.filter-button:hover {
+  background-color: #0056b3; /* Darken the button on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .filter-bar {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+}

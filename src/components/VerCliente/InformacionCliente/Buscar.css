@@ -1,0 +1,130 @@
+.buscar-container {
+  padding: 20px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.client-table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+  text-align: center; /* Centra el contenido de la tabla */
+}
+
+.client-table th,
+.client-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center; /* Centra el contenido en las celdas */
+}
+
+.client-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.client-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.client-table input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Asegura que el padding no expanda el ancho del input */
+}
+
+.edit-button,
+.save-button,
+.disable-button {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.save-button {
+  background-color: #2679f7;
+  color: white;
+}
+
+.disable-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.alert-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.volver-button-Buscar {
+  background-color: #2679f7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.volver-button-Buscar:hover {
+  background-color: #2561bc;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 1024px) {
+  .client-table {
+    font-size: 14px;
+  }
+  
+  .client-table th,
+  .client-table td {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .client-table {
+    font-size: 12px;
+  }
+  
+  .client-photo {
+    width: 30px;
+    height: 30px;
+  }
+}

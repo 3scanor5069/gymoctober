@@ -1,0 +1,95 @@
+.unique-cliente-form {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  border: 0.5px solid black;
+  padding: 20px;
+  width: 100%; /* Cambiado para ser más amplio */
+  max-width: 22rem;
+  margin: 20px auto;
+  color: #0A0909;
+  text-align: center;
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.unique-cliente-form h2{
+  font-size: 1.875rem;
+  margin-bottom: 22px;
+  background-color: #0081ff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.unique-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unique-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.unique-form-fields input, .unique-form-fields select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #727272;
+  border-radius: 0.375rem;
+  box-sizing: border-box;
+}
+
+.unique-form-fields input[type="number"] {
+  width: 100%; /* Asegura que los campos de tipo número también ocupen el 100% del ancho */
+}
+
+.unique-password-container {
+  position: relative;
+  width: 100%;
+}
+
+.unique-password-container input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.unique-password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.unique-form-buttons {
+  margin-top: 20px;
+}
+
+.unique-add-button {
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white; 
+  background-color: #2679f7;
+  box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.unique-add-button:hover{
+  background-color: #2561bc;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .unique-cliente-form {
+    width: 90%;
+  }
+}

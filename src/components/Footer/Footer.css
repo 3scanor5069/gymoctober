@@ -1,0 +1,143 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  flex-wrap: wrap; /* Asegura que los elementos se acomoden bien en pantallas más pequeñas */
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.footer-divider {
+  width: 1.5px;
+  height: auto;
+  margin: 0;
+  background-color: #d1d1d1;
+  border: none;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 270px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  margin: auto 25px;
+  text-align: center;
+}
+
+.footer-section {
+  margin-bottom: 1rem;
+}
+
+.footer-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-info p,
+.footer-about p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-about p {
+  text-align: justify;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-link {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.footer-separator {
+  margin: 0 0.5rem;
+  color: #d1d5db;
+}
+
+/* Ajustes para pantallas medianas (1024px o menos) */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-wrap: wrap; /* Permitir que los elementos se acomoden en dos filas */
+  }
+  
+  .footer-column {
+    flex-basis: 50%; /* Cada columna ocupará la mitad del ancho */
+  }
+  
+  .footer-divider {
+    display: none; /* Esconder el divisor en pantallas más pequeñas */
+  }
+}
+
+/* Ajustes para pantallas pequeñas (640px o menos) */
+@media (max-width: 640px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 1.5rem; /* Reducir padding para pantallas más pequeñas */
+  }
+  
+  .footer-column {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem; /* Ajustar padding en columnas más pequeñas */
+  }
+  
+  .footer-logo img {
+    width: 200px; /* Ajustar tamaño de logo en pantallas pequeñas */
+    height: auto;
+  }
+}
+
+/* Nuevas Media Queries para pantallas aún más pequeñas (480px o menos) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 1rem;
+  }
+
+  .footer-column {
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .footer-logo img {
+    width: 180px; /* Logo más pequeño para pantallas muy pequeñas */
+    height: auto;
+  }
+
+  .footer-heading {
+    font-size: 1rem; /* Reducir el tamaño del texto en encabezados */
+  }
+
+  .footer-link {
+    font-size: 0.75rem; /* Tamaño de fuente más pequeño en enlaces */
+  }
+
+  .footer-info p,
+  .footer-about p {
+    font-size: 0.85rem; /* Fuente más pequeña en párrafos */
+  }
+}

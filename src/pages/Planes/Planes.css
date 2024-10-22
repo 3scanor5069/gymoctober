@@ -1,0 +1,66 @@
+.plans-container {
+  margin-top: 40px;
+  position: relative;
+  height: auto;
+  padding: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 104px;
+}
+
+.plans-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.buy-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-link:hover {
+  background-color: #0056b3;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Alinea el botón a la izquierda */
+  margin-bottom: 10px; /* Deja una pequeña separación con el primer plan */
+}
+
+.mis-planes-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px; /* Margen inferior ajustado a 5px */
+}
+
+.mis-planes-button:hover {
+  background-color: #0056b3;
+}
+
+
+
